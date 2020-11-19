@@ -1,0 +1,13 @@
+frase = input("Digite os parentêses: ")
+s = 0
+t = 0
+for i in frase:
+    if i == "(":
+        s += 1
+    elif i == ")":
+        t += 1
+
+if s == t:
+    print('Você fechou corretamente os parênteses', frase)
+else:
+    print('Você não fechou corretamente os parênteses', frase)
