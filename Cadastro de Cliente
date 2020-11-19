@@ -1,0 +1,26 @@
+fila = []
+
+def Novo_Cliente(x):
+    fila.append(x)
+    fila.sort()
+    return fila
+
+def Atendimento_Realizado(y):
+    for i in fila:
+        if i == y:
+            fila.remove(i)
+    return fila
+
+while True:
+    e = int(input('''O que deseja fazer?
+    1 - Novo Cliente na Fila
+    2 - Atendimento Realizado \n'''))
+    if e == 1:
+        x = input('Digite o nome do Cliente: \n').upper()
+        print(Novo_Cliente(x))
+    elif e == 2:
+        print(fila)
+        y = input('Qual Cliente deseja remover? \n').upper()
+        print(Atendimento_Realizado(y))
+    else:
+        print('Opção inválida')
