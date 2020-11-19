@@ -1,0 +1,28 @@
+l = []
+
+def AdicionarItem(e):
+    l.append(e)
+    l.sort()
+    return l
+
+def clean(r):
+    l.pop(r)
+    return l
+
+while True:
+    x = int(input('''O que deseja fazer? 
+    1 - Adicionar item da lista
+    2 - Remover item da lista \n'''))
+    print("Lista = ", l)
+    if x == 1:
+        e = input("Digite um item para colocar na lista: \n")
+        print(AdicionarItem(e))
+        print(l)
+    elif x == 2:
+        if len(l) == 0:
+            print('A lista está vazia, não há o que remover')
+        else:
+            r = int(input('Deseja mesmo apagar o último item da lista? \n'))
+            print(clean(r))
+    else:
+        print("Opção inválida")
