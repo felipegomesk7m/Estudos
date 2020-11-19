@@ -1,0 +1,16 @@
+def Procurar(e, f):
+    if e in lista and f in lista:
+        print('Itens: ', e, f,'Posições: ', lista[e-1], lista[f-1])
+    elif e in lista:
+        print('Item: ', e,'Posição: ', lista[e-1])
+    elif f in lista:
+        print('Item: ', f, 'Posição', lista[f-1])
+    else:
+        print('Não estão na lista')        
+    return e, f
+
+lista = [1,2,3,4]
+
+e = int(input('Entre com o item a procurar: \n'))
+f = int(input('Entre com o item a procurar: \n'))
+Procurar(e, f)
