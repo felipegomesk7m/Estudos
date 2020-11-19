@@ -1,0 +1,8 @@
+Alturas = [1.85, 1.75, 1.90, 1.65, 1.74, 1.70, 1.55, 1.68]
+
+soma = 0
+for i in Alturas:
+    soma = soma + i
+
+media = soma/len(Alturas)
+print('A média de alturas é {:.2f}'.format(media))
