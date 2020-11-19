@@ -1,0 +1,56 @@
+while True:
+    num = int(input('Digite um número: \n'))
+    if num > 99:
+        print('Você digitou um número maior que 100. Digite de novo')
+    else:
+        break
+
+lista1 = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove']
+lista2 = ['onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove']
+lista3 = ['vinte e ']
+lista4 = ['trinta e ']
+lista5 = ['quarenta e ']
+lista6 = ['cinquenta e ']
+lista7 = ['sessenta e ']
+lista8 = ['setenta e ']
+lista9 = ['oitenta e ']
+lista10 = ['noventa e ']
+
+if num in range(0, 10):
+    print('Você digitou', lista1[num-1])
+elif num == 10:
+    print('Você digitou dez')
+elif num in range(11, 20):
+    print('Você digitou', lista2[num-11])
+elif num == 20:
+    print('Você digitou vinte')
+elif num in range(21, 30):
+    print('Você digitou', lista3[0]+lista1[num-21])
+elif num == 30:
+    print('Você digitou trinta')
+elif num in range(31, 40):
+    print('Você digitou', lista4[0]+lista1[num-31])
+elif num == 40:
+    print('Você digitou quarenta')
+elif num in range(41, 50):
+    print('Você digitou', lista5[0]+lista1[num-41])
+elif num == 50:
+    print('Você digitou cinquenta')
+elif num in range(51, 60):
+    print('Você digitou', lista6[0]+lista1[num-51])
+elif num == 60:
+    print('Você digitou sessenta')
+elif num in range(61, 70):
+    print('Você digitou', lista7[0]+lista1[num-61])
+elif num == 70:
+    print('Você digitou setenta')
+elif num in range(71, 80):
+    print('Você digitou', lista8[0]+lista1[num-71]) 
+elif num == 80:
+    print('Você digitou oitenta')
+elif num in range(81, 90):
+    print('Você digitou', lista9[0]+lista1[num-81])
+elif num == 90:
+    print('Você digitou noventa')
+elif num in range(91, 100):
+    print('Você digitou', lista10[0]+lista1[num-91])
