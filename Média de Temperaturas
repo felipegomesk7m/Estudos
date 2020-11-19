@@ -1,0 +1,17 @@
+def CalcularMédia(media):
+    soma = 0
+    for i in T:
+        soma = soma + i
+    media = soma/len(T)
+    print('A média é: {:.2f}º'.format(media))
+    return media
+
+
+T = [-10, -8, 0, 1, 2, 5, -2, -4]
+
+T.sort()
+qt = len(T)
+
+print('A menor temperatura é', T[0], 'e a maior temperatura é', T[qt-1])
+media = 0
+CalcularMédia(media)
